@@ -32,20 +32,37 @@ class Calculator:
     def Divide (x, y):
         return x / y
 
+    def Modulo (x):
+        return x % y
+
+    def Factorial(x):
+      retval = x
+      x = x-1
+      while x > 0:
+        retval = retval * x
+        x = x-1
+      return retval
+
     menu_options = {
      1: Add,
      2: Subtract,
      3: Multiply,
      4: Divide,
+     5: Modulo,
+     6: Factorial,
     }
 
     def Menu(self):
-        print('1) Add \n2) Subract\n3) Multiply \n4) Divide\n')
+        print('1) Add \n2) Subract\n3) Multiply \n4) Divide\n5) Modulo\n6) Factorial')
         choice = input("Select option:")
         x = float(input("enter first number:"))
-        y = float(input("enter second number:"))
-        func = self.menu_options.get(choice)
-        return func(x, y)
+        if choice != 6:
+          y = float(input("enter second number:"))
+          func = self.menu_options.get(choice)
+          return func(x, y)
+        else:
+          func = self.menu_options.get(choice)
+          return func(x)
 
 while True:
     calc = Calculator()
@@ -55,13 +72,25 @@ while True:
 So the next thing we're going to do is introduce a Modulo function
 
 ```python
+
   result = 88 % 60
-  ```
+
+```
 
   one thing you may notice about the code above is that there is no error trapping which is a problem if you enter anything but numbers in the number prompt... adding error trapping will be out _second_ task
 
 hopefully this will be enough to tide you over ... if not try adding _factorial_ ;-)
 
+```python
+   def Factorial(p):
+     retval = p
+     p = p-1
+     while p > 0:
+       retval = retval * p
+       p = p-1
+     return retval
+
+```
 Pw
 
 [1]:https://www.python.org/
