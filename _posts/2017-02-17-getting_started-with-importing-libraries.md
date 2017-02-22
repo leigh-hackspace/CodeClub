@@ -7,9 +7,9 @@ categories: CodeUp CodeClub Leigh Hackspace Python
 
 Turtle Power
 ================
-So first off ... we need to go to our code club repo and create a `turle` folder and in this folder create a file with your initials in it with the extension of `.py` for example `week9PW.py`
+So first off ... we need to go to our code club repo and create a `turtle` folder and in this folder create a file with your initials in it with the extension of `.py` for example `week9PW.py`
 
-If, like me you're running linux you can do this in the command line by typing the following into a command shell
+If like me, you're running linux you can do this in the command line by typing the following into a command shell
 `$ touch week9PW.py `
 but then you wouldn't be following along in atom ;-) so in atom if you need to right click the `2017` folder and select the `new folder` option then name it something like `turtle<yourinitials>` then right click this folder and then select new file this is our file so it will need a `.py` extension (like I mentioned above)
 ![creating the turtle file]({{ site.url }}/codeclub/images/turtle_power/1.adding_turtle_file.png)
